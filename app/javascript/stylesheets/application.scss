@@ -9,12 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@include media-breakpoint-down(md) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
 body {
   background-image: url('../../assets/images/bkg.png');
   background-repeat: no-repeat;
