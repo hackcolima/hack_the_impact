@@ -25,9 +25,9 @@ main
       a.nav-link.text-dark.bg-white.m-2(href="#info" data-turbolinks="false") Más información
   section#brief
     .row.align-items-center
-      .col-4
-        = image_tag  "team", class: 'w-100 rounded-circle p-4'
-      .col-8
+      .d-none.d-md-block.col-md-4
+        = image_tag  "team", class: 'w-100 rounded-circle p-lg-4'
+      .col-12.col-md-8
         h2 Objetivo
         p Actualmente, en México y el mundo nos encontramos en una situación sin precedentes, causada por la pandemia del Coronavirus (<strong>COVID-19</strong>). La cual dejará estragos, no solo en el área de salud, sino también en la economía de miles sino millones de hogares.
         p Como respuesta a esto, proponemos una serie de eventos virtuales, donde buscamos reunir emprendedores, diseñadores, tecnólogos, y sociedad interesada en encontrar soluciones públicas para los retos que se presentarán en las siguientes áreas:
@@ -35,6 +35,8 @@ main
           li Educación
           li Economía
           li Salud
+        .d-md-none.col-md-4
+          = image_tag  "team", class: 'w-100 rounded-circle p-4'
   hr.col-3
   section#hackathon
     .row.mt-3
@@ -44,27 +46,27 @@ main
         p No obstante, en este momento ocupamos de todos. Sí, de toda persona que tenga ideas para mitigar el impacto causado por la contingencia del <strong>COVID-19</strong>. Por ejemplo:
 
     .row.justify-content-center
-      .col-2
+      .col-6.col-md-4.col-lg-2
         .card.text-center.card--icon
           i.card-img-top.las.la-rocket
           .card-body
             h5 Innovadores
-      .col-2
+      .col-6.col-md-4.col-lg-2
         .card.text-center.card--icon
           i.card-img-top.las.la-tools
           .card-body
             h5 Creadores
-      .col-2
+      .col-6.col-md-4.col-lg-2
         .card.text-center.card--icon
           i.card-img-top.las.la-thumbs-up
           .card-body
             h5 Empáticos
-      .col-2
+      .col-6.col-md-4.col-lg-2
         .card.text-center.card--icon
           i.card-img-top.las.la-user-shield
           .card-body
             h5 Quienes enfrentan el problema directamente
-      .col-2
+      .col-6.col-md-4.col-lg-2
         .card.text-center.card--icon
           i.card-img-top.las.la-microscope
           .card-body
@@ -112,25 +114,25 @@ main
         h2 Partners
         p Este evento es posible gracias a la colaboración de:
     .row.text-center.partners-list
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="http://www.col.gob.mx/" style=""
           = image_tag "gobedo.png"
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="http://www.hackcolima.com/"
           = image_tag "hackcolima.png"
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="https://www.magmalabs.io/"
           = image_tag "magma.png"
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="https://www.codeandomexico.org/"
           = image_tag "codeando.png"
-      .col-3.partners-list-item.tango
+      .col-12.col-md-4.partners-list-item.tango
         a href="https://tango.io"
           = image_tag "tango.svg"
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="https://a-creativa.negocio.site/"
           = image_tag "acreativa.png"
-      .col-3.partners-list-item
+      .col-12.col-md-4.partners-list-item
         a href="https://toptal.com/"
           = image_tag "toptal.png"
     .row
