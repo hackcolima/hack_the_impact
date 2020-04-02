@@ -1,0 +1,57 @@
+@import "./bootstrap_custom.scss";
+
+$la-font-path: "~line-awesome/dist/line-awesome/fonts";
+@import "~line-awesome/dist/line-awesome/scss/line-awesome";
+
+html {
+  min-height: 3000px;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('../../assets/images/bkg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  background-color: #28966D;
+}
+
+.main-logo img {
+  width: 100%;
+}
+
+main {
+  background-color: white;
+  section {
+    padding: 1rem 5rem;
+  }
+}
+
+.card--icon {
+  border: none;
+  i {
+    font-size: 5rem;
+    &:hover {
+      color: theme-color("warning")
+    }
+  }
+}
+
+section#partners {
+  img {
+    max-width: 100%;
+    max-height: 95px;
+  }
+  .partners-list {
+    .partners-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .tango img {
+      height: 95px
+    }
+  }
+}
