@@ -52,11 +52,6 @@ section#partners {
   .tango img {
     height: 95px;
   }
-  @include media-breakpoint-down(sm) {
-    .hackcolima img {
-      max-height: 175px;
-    }
-  }
   .partners-list {
     .partners-list-item {
       display: flex;
