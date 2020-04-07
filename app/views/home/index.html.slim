@@ -1,157 +1,124 @@
-header.text-white
+section#brief
   .row.align-items-center
-    .offset-md-3.col-md-6.main-logo.text-center
-      = image_tag "logo.png"
-      h3 10, 11 y 12 de Abril 2020
-    .col-md-12
-      .jumbotron.bg-transparent.text-center
-        h1 Evento 100% online y gratuito, para desarrollar soluciones que contrarresten los efectos causados por el COVID-19
-        p.lead
-          a.btn.btn-warning.btn-lg.font-weight-bold href=registration_form_url role="button" ¡QUIERO PARTICIPAR!
-        p
-          |Regístrate antes del 10 de abril, 5pm CST
-
-main
-  ul.nav.nav-pills.bg-light.p-2
-    li.nav-item
-      a.nav-link.text-dark.bg-white.m-2(href="#brief" data-turbolinks="false") Objetivo
-    li.nav-item
-      a.nav-link.text-dark.bg-white.m-2(href="#hackathon" data-turbolinks="false") Quienes participan
-    li.nav-item
-      a.nav-link.text-dark.bg-white.m-2(href="#event" data-turbolinks="false") Hack The Impact
-    li.nav-item
-      a.nav-link.text-dark.bg-white.m-2(href="#partners" data-turbolinks="false") Partners
-    li.nav-item
-      a.nav-link.text-dark.bg-white.m-2(href="#info" data-turbolinks="false") Más información
-  section#brief
-    .row.align-items-center
-      .d-none.d-md-block.col-md-4
-        = image_tag  "team.jpg", class: 'w-100 rounded-circle p-lg-4'
-      .col-12.col-md-8
-        h2.mb-4 Objetivo
-        p Actualmente, en México y el mundo nos encontramos en una situación sin precedentes, causada por la pandemia del Coronavirus (<strong>COVID-19</strong>). La cual dejará estragos, no solo en el área de salud, sino también en la economía de miles sino millones de hogares.
-        p Pero, ¡siempre hay esperanza! Como respuesta al COVID-19, realizaremos un evento virtual del tipo Hackathon. Donde buscamos reunir emprendedores, diseñadores, tecnólogos, y miembros de la sociedad; que estén interesados en encontrar y desarrollar soluciones públicas para los retos que se están presentando o avecinan.
-        .d-md-none.col-md-4
-          = image_tag  "team.jpg", class: 'w-100 rounded-circle p-4'
-  hr.col-3
-  section#hackathon
-    .row.mt-3
-      .col-12
-        h2.mb-4 ¿Qué es un Hackathon y quiénes pueden participar?
-        p Es una colaboración colectiva que busca alcanzar una meta en común. Dicho encuentro, generalmente de tecnólogos, tiene el objetivo de desarrollar un software o hardware que cumpla con un fin en específico.
-        p No obstante, en este momento ocupamos de todos. Sí, de toda persona que tenga ideas para mitigar el impacto causado por la contingencia del <strong>COVID-19</strong>. Por ejemplo:
-
-    .row.justify-content-center
-      .col-6.col-md-4.col-lg-2
-        .card.text-center.card--icon
-          i.card-img-top.las.la-rocket
-          .card-body
-            h5 Innovadores
-      .col-6.col-md-4.col-lg-2
-        .card.text-center.card--icon
-          i.card-img-top.las.la-tools
-          .card-body
-            h5 Creadores
-      .col-6.col-md-4.col-lg-2
-        .card.text-center.card--icon
-          i.card-img-top.las.la-thumbs-up
-          .card-body
-            h5 Empáticos
-      .col-6.col-md-4.col-lg-2
-        .card.text-center.card--icon
-          i.card-img-top.las.la-user-shield
-          .card-body
-            h5 Quienes enfrentan el problema directamente
-      .col-6.col-md-4.col-lg-2
-        .card.text-center.card--icon
-          i.card-img-top.las.la-microscope
-          .card-body
-            h5 Investigadores
-    .row
-      .col-12.text-center.p-3
-        a.btn.btn-warning.btn-lg.font-weight-bold href=registration_form_url role="button" ¡QUIERO PARTICIPAR!
-  hr.col-3
-  section#event
-    .row
-      .col-12
-
-        h2.mb-4 El evento: Hack The Impact (<small>10,11,12 de Abril</small>)
-
-        p Durante 2 días y medio, se pretende desarrollar la propuesta base para aplicaciones móviles o web, así como para diseños industriales, que tengan por objetivo mitigar el impacto de alguno de los efectos que tiene la contingencia provocada por el COVID-19.
-
-        p Así que ¡manos a la obra! Si tienes un proyecto en mente, o quieres colaborar en uno, te invitamos a que te registres y participes.
-
-        p Pasos:
-
-        ol.list
-          li
-            p.font-weight-bold
-              span Regístrate
-              i class="las la-handshake h4 ml-1"
-          li
-            p
-              span.font-weight-bold Recibe un correo de confirmación.
-              i class="las la-envelope h4 ml-1"
-              br
-              em Incluye instrucciones y agenda del evento.
-
-          li
-            p
-              span.font-weight-bold Únete a un equipo.
-              i class="las la-user-friends h4 ml-1"
-              br
-              em El staff del evento te ayudará.
-          li
-            p.font-weight-bold
-              span Comienza a trabajar.
-              i class="las la-mug-hot h4 ml-1"
-    .row
-      .col-12.text-center.p-3
-        a.btn.btn-warning.btn-lg.font-weight-bold href=registration_form_url role="button" Regístrate aquí
-        p.mt-3 Tienes hasta el 10 de abril, 5pm CST
-  hr.col-3
-  section#partners
-    .row
-      .col-12
-
-        h2.mb-4 Partners
-        p Este evento es posible gracias a la colaboración de:
-    .row.justify-content-center.text-center.partners-list
-      .col-12.col-md-6.col-lg-4.partners-list-item
-        a href="http://www.col.gob.mx/" style=""
-          = image_tag "gobedo.png"
-      .col-12.col-md-6.col-lg-4.partners-list-item.hackcolima
-        a href="http://www.hackcolima.com/"
-          = image_tag "hackcolima.png"
-      .col-12.col-md-6.col-lg-4.partners-list-item
-        a href="https://www.magmalabs.io/"
-          = image_tag "magma.png"
-      .col-12.col-md-6.col-lg-4.partners-list-item
-        a href="https://www.codeandomexico.org/"
-          = image_tag "codeando.png"
-      .col-12.col-md-6.col-lg-4.partners-list-item.tango
-        a href="https://tango.io"
-          = image_tag "tango.svg"
-      .col-12.col-md-6.col-lg-4.partners-list-item
-        a href="https://a-creativa.negocio.site/"
-          = image_tag "acreativa.png"
-      .col-12.col-md-6.col-lg-4.partners-list-item
-        a href="https://toptal.com/"
-          = image_tag "toptal.png"
-  hr.col-3
-  section#info
-    .row
-      .col-12
-        h2.mb-4 Preguntas y más información
-        ul.list-unstyled.h4
-          li
-            a href='https://fb.com/HackColima'
-              i.lab.la-facebook
-            a href='https://instagram.com/HackColima'
-              i.lab.la-instagram
-            a href='https://twitter.com/HackColima'
-              i.lab.la-twitter
-            span.ml-3 HackColima
-          li
-            i.las.la-envelope
-            span.ml-3 daniel@hackcolima.com
+    .d-none.d-md-block.col-md-4
+      = image_tag  "team.jpg", class: 'w-100 rounded-circle p-lg-4'
+    .col-12.col-md-8
+      h2.mb-4 Objetivo
+      p Actualmente, en México y el mundo nos encontramos en una situación sin precedentes, causada por la pandemia del Coronavirus (<strong>COVID-19</strong>). La cual dejará estragos, no solo en el área de salud, sino también en la economía de miles sino millones de hogares.
+      p Pero, ¡siempre hay esperanza! Como respuesta al COVID-19, realizaremos un evento virtual del tipo Hackathon. Donde buscamos reunir emprendedores, diseñadores, tecnólogos, y miembros de la sociedad; que estén interesados en encontrar y desarrollar soluciones públicas para los retos que se están presentando o avecinan.
+      p De acuerdo a las necesidades detectadas para el Estado de Colima, las verticales bajo las cuales se trabajará en este hackatón serán <a href="#{challenges_path}"><strong>Economía, Educación y Salud</strong></a>. Puedes revisar los retos específicos e ideas para inspirarte <a href="#{challenges_path}">aquí</a>.
+      p Toma en consideración que, aunque los retos son <em>locales</em>, las soluciones y los participantes pueden venir <strong>desde cualquier parte del mundo</strong>.
+hr.col-3
+section#hackathon
+  .row.mt-3
+    .col-12
+      h2.mb-4 ¿Qué es un Hackathon y quiénes pueden participar?
+      p Es una colaboración colectiva que busca alcanzar una meta en común. Dicho encuentro, generalmente de tecnólogos, tiene el objetivo de desarrollar un software o hardware que cumpla con un fin en específico.
+      p No obstante, en este momento ocupamos de todos. Sí, de toda persona que tenga ideas para mitigar el impacto causado por la contingencia del <strong>COVID-19</strong>. Por ejemplo:
+  .row.justify-content-center
+    .col-6.col-md-4.col-lg-2
+      .card.text-center.card--icon
+        i.card-img-top.las.la-rocket
+        .card-body
+          h5 Innovadores
+    .col-6.col-md-4.col-lg-2
+      .card.text-center.card--icon
+        i.card-img-top.las.la-tools
+        .card-body
+          h5 Creadores
+    .col-6.col-md-4.col-lg-2
+      .card.text-center.card--icon
+        i.card-img-top.las.la-thumbs-up
+        .card-body
+          h5 Empáticos
+    .col-6.col-md-4.col-lg-2
+      .card.text-center.card--icon
+        i.card-img-top.las.la-user-shield
+        .card-body
+          h5 Quienes enfrentan el problema directamente
+    .col-6.col-md-4.col-lg-2
+      .card.text-center.card--icon
+        i.card-img-top.las.la-microscope
+        .card-body
+          h5 Investigadores
+  .row
+    .col-12.text-center.p-3
+      a.btn.btn-warning.btn-lg.font-weight-bold href=registration_form_url role="button" ¡QUIERO PARTICIPAR!
+hr.col-3
+section#event
+  .row
+    .col-12
+      h2.mb-4 El evento: Hack The Impact (<small>10,11,12 de Abril</small>)
+      p Durante 2 días y medio, se pretende desarrollar la propuesta base para aplicaciones móviles o web, así como para diseños industriales, que tengan por objetivo mitigar el impacto de alguno de los efectos que tiene la contingencia provocada por el COVID-19.
+      p Así que ¡manos a la obra! Si tienes un proyecto en mente, o quieres colaborar en uno, te invitamos a que te registres y participes.
+      p Pasos:
+      ol.list
+        li
+          p.font-weight-bold
+            span Regístrate
+            i class="las la-handshake h4 ml-1"
+        li
+          p
+            span.font-weight-bold Recibe un correo de confirmación.
+            i class="las la-envelope h4 ml-1"
+            br
+            em Incluye instrucciones y agenda del evento.
+        li
+          p
+            span.font-weight-bold Únete a un equipo.
+            i class="las la-user-friends h4 ml-1"
+            br
+            em El staff del evento te ayudará.
+        li
+          p.font-weight-bold
+            span Comienza a trabajar.
+            i class="las la-mug-hot h4 ml-1"
+  .row
+    .col-12.text-center.p-3
+      a.btn.btn-warning.btn-lg.font-weight-bold href=registration_form_url role="button" Regístrate aquí
+      p.mt-3 Tienes hasta el 10 de abril, 5pm CST
+hr.col-3
+section#partners
+  .row
+    .col-12
+      h2.mb-4 Partners
+      p Este evento es posible gracias a la colaboración de:
+  .row.justify-content-center.text-center.partners-list
+    .col-12.col-md-6.col-lg-4.partners-list-item
+      a href="http://www.col.gob.mx/" style=""
+        = image_tag "gobedo.png"
+    .col-12.col-md-6.col-lg-4.partners-list-item.hackcolima
+      a href="http://www.hackcolima.com/"
+        = image_tag "hackcolima.png"
+    .col-12.col-md-6.col-lg-4.partners-list-item
+      a href="https://www.magmalabs.io/"
+        = image_tag "magma.png"
+    .col-12.col-md-6.col-lg-4.partners-list-item
+      a href="https://www.codeandomexico.org/"
+        = image_tag "codeando.png"
+    .col-12.col-md-6.col-lg-4.partners-list-item.tango
+      a href="https://tango.io"
+        = image_tag "tango.svg"
+    .col-12.col-md-6.col-lg-4.partners-list-item
+      a href="https://a-creativa.negocio.site/"
+        = image_tag "acreativa.png"
+    .col-12.col-md-6.col-lg-4.partners-list-item
+      a href="https://toptal.com/"
+        = image_tag "toptal.png"
+hr.col-3
+section#info
+  .row
+    .col-12
+      h2.mb-4 Preguntas y más información
+      ul.list-unstyled.h4
+        li
+          a href='https://fb.com/HackColima'
+            i.lab.la-facebook
+          a href='https://instagram.com/HackColima'
+            i.lab.la-instagram
+          a href='https://twitter.com/HackColima'
+            i.lab.la-twitter
+          span.ml-3 HackColima
+        li
+          i.las.la-envelope
+          span.ml-3 daniel@hackcolima.com
